@@ -1,0 +1,30 @@
+Titre : Application POO
+
+==== Préparation ====
+1. Créer un fichier index.php
+2. Créer un dossier classes
+3. Dans le dossier classes, ajouter le fichier app.php
+
+==== Classe App ====
+4. Dans le fichier classes/app.php créer la class App
+5. Dans la classe App, ajouter un constructeur
+6. Dans la classe App, ajouter les méthodes show_header et show_footer
+7. Les fonctions show_header et show_footer incluent les templates HTML du header et du footer de vos pages. Stocker ces templates dans un dossier templates à la racine du projet
+8. Ajouter une méthode show_body n'affichant que le body vide pour le moment
+9. Dans le constructeur, exécuter les méthodes show_header, show_body et show_footer dans cet ordre.
+10. Dans l'index.php, instancier votre classe App
+
+==== Connexion à la BDD ====
+
+11. S'assurer d'avoir une méthode "config" que l'on exécutera au tout début de notre constructeur
+12. Dans la méthode config, ouvrir une connexion avec la base de données contenant la table animals (de refuge). Stocker la connexion dans un attribut "bdd" ou "db".
+
+==== Génération du menu ====
+
+13. Créer une méthode "show_menu"
+14. Exécuter la méthode show_menu dans le show_body, à l'emplacement désiré
+
+15. Créer une méthode get_distinct_species permettant de retourner un tableau des différentes espèces de BDD
+
+16. Implémenter la méthode show_menu, de manière à ce qu'elle affiche un lien par espèces
+17. Chaque lien doit diriger ver l'index.php et contenir une variable "page" en GET dont la valeur sera l'espèce.
